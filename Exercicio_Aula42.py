@@ -12,12 +12,12 @@ frase = 'O Python e uma linguagem de programação '\
 contador_letras = {}
 
 
-index = 0
-while index < len(frase):
-    letra = frase[index]
+i = 0
+while i < len(frase):
+    letra = frase[i]
     if letra.isalpha() or letra == 'Ã' or  letra == 'Ç':
         contador_letras[letra] = contador_letras.get(letra, 0) + 1
-    index += 1
+    i += 1
     
 
 letra_mais_frequente = max(contador_letras, key=contador_letras.get)
